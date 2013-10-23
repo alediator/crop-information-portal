@@ -34,6 +34,7 @@
 		<!--<root.basedir>${basedir}/../../</root.basedir> -->
 		<!-- JETTY jar classpath -->
 		<geobatch_starter.classpath>${geobatch_starter.dir}/WEB-INF/lib/</geobatch_starter.classpath>
+		<jetty.port>10080</jetty.port>
 	</properties>
 	<!-- =========================================================== -->
 	<!-- Dependencies -->
@@ -304,7 +305,7 @@
 					<contextPath>geobatch</contextPath>
 					<connectors>
 						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-							<port>8081</port>
+							<port>${jetty.port}</port>
 							<maxIdleTime>10000</maxIdleTime>
 						</connector>
 					</connectors>
