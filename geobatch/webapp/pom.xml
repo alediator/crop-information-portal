@@ -49,6 +49,13 @@
 			<groupId>it.geosolutions.geobatch</groupId>
 			<artifactId>nrl-action-csvingest</artifactId>
 			<version>1.4-SNAPSHOT</version>
+            <exclusions>
+                <!-- Exclude hibernate dependency -->
+                <exclusion>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-validator</artifactId>
+                </exclusion>
+            </exclusions>
 		</dependency>
 
 		<dependency>
@@ -304,7 +311,7 @@
 					<contextPath>geobatch</contextPath>
 					<connectors>
 						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-							<port>8081</port>
+							<port>11081</port>
 							<maxIdleTime>10000</maxIdleTime>
 						</connector>
 					</connectors>
