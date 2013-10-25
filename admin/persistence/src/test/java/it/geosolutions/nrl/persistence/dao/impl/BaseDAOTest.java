@@ -25,12 +25,16 @@ import it.geosolutions.nrl.model.CropDescriptor;
 import it.geosolutions.nrl.persistence.dao.AgrometDAO;
 import it.geosolutions.nrl.persistence.dao.CropDataDAO;
 import it.geosolutions.nrl.persistence.dao.CropDescriptorDAO;
+import it.geosolutions.nrl.persistence.dao.CropStatusDAO;
+
 import java.util.List;
+
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static org.junit.Assert.*;
+
 import org.junit.Before;
 
 /**
@@ -46,11 +50,14 @@ public abstract class BaseDAOTest extends BaseTest {
 
     protected static AgrometDAO agrometDAO;
 
+    protected static CropStatusDAO cropStatusDAO;
+
     public BaseDAOTest() {
 
         cropDescriptorDAO = ctx.getBean("cropDescriptorDao", CropDescriptorDAO.class);
         cropDataDAO = ctx.getBean("cropDataDao", CropDataDAO.class);
         agrometDAO = ctx.getBean("agrometDao", AgrometDAO.class);
+        cropStatusDAO = ctx.getBean("cropStatusDao", CropStatusDAO.class);
     }
 
     @Before
