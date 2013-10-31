@@ -55,8 +55,8 @@
 
 	<bean id="NDVIStatistics" class="it.geosolutions.operations.NDVIStatisticsOperation">
 			<property name="path" value="NDVIStats"/>
-			<property name="basedirString" value="G:/OpenSDIManager/test_geotiff/"/>
-			<property name="gbinputdirString" value="G:/OpenSDIManager/gbinputdir/"/>
+			<property name="basedirString" value="/tmp"/>
+			<property name="gbinputdirString" value="/home/alediator/test_tiff"/>
 			<property name="geobatchRestUrl" value="http://localhost:10080/geobatch/rest/"/>
 			<property name="geobatchUsername" value="admin"/>
 			<property name="geobatchPassword" value="admin"/>
