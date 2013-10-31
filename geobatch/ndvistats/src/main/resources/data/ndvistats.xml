@@ -36,16 +36,16 @@
             <id>NDVIIngestConfiguration</id>
             <name>NDVI CSV stats preparation</name>
             <description>Prepare time interval in TIF filenames </description>
-            <defaultMaskUrl>file:/home/alediator/CROP_MASKS/agri_merge_erase.shp</defaultMaskUrl>
+            <defaultMaskUrl>C:/test_ndvi/CROP_MASKS/agri_merge_erase.shp</defaultMaskUrl>
 			<dbType>postgis</dbType>
-			<dbHost>localhost</dbHost>
+			<dbHost>192.168.1.115</dbHost>
 			<dbPort>5432</dbPort>
 			<dbSchema>public</dbSchema>
 			<dbName>NRL_db</dbName>
 			<dbUser>geosolutions</dbUser>
 			<dbPasswd>geosolutions</dbPasswd>
-			<tiffDirectory>/home/alediator/test_tiff/ndvi</tiffDirectory>
-			<outputDirectory>/home/alediator/test_csv</outputDirectory>
+			<tiffDirectory>C:/test_ndvi/tiff</tiffDirectory>
+			<outputDirectory>C:/test_ndvi/csv</outputDirectory>
 			<csvSeparator>,</csvSeparator>
             
         </NDVIStatsConfiguration>
@@ -57,7 +57,7 @@
     <ListenerConfigurations>
 		<LoggingProgressListener>
 			<serviceID>loggingListenerService</serviceID>
-			<id>ConsumerLogger1</id>
+			<id>ConsumerLogger0</id>
 			<loggerName>it.geosolutions.ConsLogger</loggerName>
 		</LoggingProgressListener>
         <CumulatingProgressListener>
