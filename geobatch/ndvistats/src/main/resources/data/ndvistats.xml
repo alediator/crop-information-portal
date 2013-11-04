@@ -38,12 +38,12 @@
             <description>Prepare time interval in TIF filenames </description>
             <defaultMaskUrl>C:/test_ndvi/CROP_MASKS/agri_merge_erase.shp</defaultMaskUrl>
 			<dbType>postgis</dbType>
-			<dbHost>192.168.1.115</dbHost>
+			<dbHost>84.33.2.75</dbHost>
 			<dbPort>5432</dbPort>
 			<dbSchema>public</dbSchema>
-			<dbName>NRL_db</dbName>
-			<dbUser>geosolutions</dbUser>
-			<dbPasswd>geosolutions</dbPasswd>
+			<dbName>NRL</dbName>
+			<dbUser>geoserver</dbUser>
+			<dbPasswd>1geosolutions2</dbPasswd>
 			<tiffDirectory>C:/test_ndvi/tiff</tiffDirectory>
 			<outputDirectory>C:/test_ndvi/csv</outputDirectory>
 			<csvSeparator>,</csvSeparator>

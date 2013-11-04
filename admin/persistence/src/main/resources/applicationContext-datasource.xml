@@ -19,9 +19,9 @@
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="org.postgresql.Driver" />
-		<property name="url" value="jdbc:postgresql:NRL_db//localhost" />
-		<property name="username" value="geosolutions" />
-		<property name="password" value="geosolutions" />
+		<property name="url" value="jdbc:postgresql://84.33.2.75:5432/NRL" />
+		<property name="username" value="pippo" />
+		<property name="password" value="pluto" />
 	</bean>
 	
 	<bean id="nrlVendorAdapter"
