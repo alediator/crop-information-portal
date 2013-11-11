@@ -17,6 +17,10 @@
 <script src="<c:url value="/js/form.js"/>"></script>
 <script src="<c:url value="/js/jquery.form.min.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/js/bootstrap-filestyle.min.js"/>"></script>
+<!--[if IE lt 8 ]>
+<script type="text/javascript" src="<c:url value="/js/html5shiv.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/js/respond.min.js"/>"></script>
+<![endif]-->
 
 </head>
 <body>

@@ -38,3 +38,42 @@ body{
 }
 
 /* FOOTER on jquery-mapstore-footer.css*/
+
+/**
+Trying to solve dropdown problems 
+**/
+.dropdown-menu{
+	/* this code put all dropmenus always visible 
+	border: 1px solid black;
+	height: 100px;
+	z-index: 1000;
+	display: block;*/
+}
+
+li.dropdown.open > ul.dropdown-menu{
+	/* this code works on IE > 8 but not in IE <=8 */
+	display: block;
+	/*background-color: red;*/
+}
+
+li.open ul.dropdown-menu{
+	/* this code works on IE > 8 but not in IE <=8 */
+	display: block;
+	background-color: green;
+}
+
+/* this code it's copied from this: https://github.com/twbs/bootstrap/issues/10257, but not works */
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar,
+.navbar-inverse .navbar-inner {
+    filter: none;
+    background-image: none;
+}
+
+/* Another try from here: https://github.com/ssolomon/bootstrap/commit/420842fb8281b9e06db860ce7af94c4be9055ed0 */
+.nav-collapse.collapse,
+.dropdown-menu{
+ 	overflow: visible;
+ }
